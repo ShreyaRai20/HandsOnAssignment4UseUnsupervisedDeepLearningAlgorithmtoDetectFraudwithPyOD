@@ -22,6 +22,7 @@ are fraudulent — a highly imbalanced dataset, which is typical of
 real-world fraud detection problems.
 
 Columns:
+
 - `Time` – seconds elapsed since the first transaction
 - `V1`–`V28` – anonymized features from a PCA transformation (the original
   features could not be published due to confidentiality)
@@ -29,6 +30,7 @@ Columns:
 - `Class` – target label (`1` = fraud, `0` = normal)
 
 **To run this project with the real data:**
+
 1. Download `creditcard.csv` from the Kaggle link above (Kaggle account required).
 2. Place it in this project folder.
 3. Run: `python fraud_detection_autoencoder.py --data creditcard.csv`
@@ -76,6 +78,7 @@ python fraud_detection_autoencoder.py --data creditcard.csv --output-dir output
 ```
 
 Arguments:
+
 - `--data` — path to the Kaggle `creditcard.csv` file (defaults to
   `creditcard.csv` in the current directory; falls back to a synthetic
   dataset with a warning if not found)
@@ -102,12 +105,12 @@ Arguments:
 
 ## Sample Results (synthetic demonstration run)
 
-| Metric | Value |
-|---|---|
-| ROC-AUC | 1.0000 |
+| Metric                     | Value  |
+| -------------------------- | ------ |
+| ROC-AUC                    | 1.0000 |
 | PR-AUC (Average Precision) | 0.9978 |
-| Fraud recall | 1.00 |
-| Fraud precision | 0.94 |
+| Fraud recall               | 1.00   |
+| Fraud precision            | 0.94   |
 
 See `output/console_output_screenshot.png` for the full console output
 and `output/roc_curve.png` / `output/reconstruction_error_hist.png` for
