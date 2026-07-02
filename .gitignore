@@ -1,0 +1,71 @@
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Data files
+*.csv
+
+# Excel files
+*.xlsx
+*.xls
+
+# Model files
+*.h5
+*.keras
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.pb
+
+# TensorBoard
+logs/
+
+# MLflow
+mlruns/
+
+# Temporary files
+*.tmp
+*.temp
+```
